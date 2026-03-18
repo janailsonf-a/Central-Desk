@@ -1,0 +1,37 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#6137
+    [34mall[39m: [
+      [34;4mApp\Models\Priority[39;24m {#6138
+        [34mid[39m: [35m1[39m,
+        [34mname[39m: "[32mBaixa[39m",
+        [34mslug[39m: "[32mbaixa[39m",
+        [34mlevel[39m: [35m1[39m,
+        [34mcreated_at[39m: "[32m2026-03-18 21:09:59[39m",
+        [34mupdated_at[39m: "[32m2026-03-18 21:09:59[39m",
+      },
+      [34;4mApp\Models\Priority[39;24m {#6139
+        [34mid[39m: [35m2[39m,
+        [34mname[39m: "[32mMédia[39m",
+        [34mslug[39m: "[32mmedia[39m",
+        [34mlevel[39m: [35m2[39m,
+        [34mcreated_at[39m: "[32m2026-03-18 21:09:59[39m",
+        [34mupdated_at[39m: "[32m2026-03-18 21:09:59[39m",
+      },
+      [34;4mApp\Models\Priority[39;24m {#6140
+        [34mid[39m: [35m3[39m,
+        [34mname[39m: "[32mAlta[39m",
+        [34mslug[39m: "[32malta[39m",
+        [34mlevel[39m: [35m3[39m,
+        [34mcreated_at[39m: "[32m2026-03-18 21:09:59[39m",
+        [34mupdated_at[39m: "[32m2026-03-18 21:09:59[39m",
+      },
+      [34;4mApp\Models\Priority[39;24m {#6141
+        [34mid[39m: [35m4[39m,
+        [34mname[39m: "[32mCrítica[39m",
+        [34mslug[39m: "[32mcritica[39m",
+        [34mlevel[39m: [35m4[39m,
+        [34mcreated_at[39m: "[32m2026-03-18 21:09:59[39m",
+        [34mupdated_at[39m: "[32m2026-03-18 21:09:59[39m",
+      },
+    ],
+  }
+
