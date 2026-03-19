@@ -95,3 +95,20 @@ composer install
 cp .env.example .env
 
 php artisan key:generate
+
+
+## ✅ Testes automatizados
+
+O projeto conta com testes automatizados cobrindo o fluxo principal da aplicação:
+
+- login de usuário
+- bloqueio de usuário inativo
+- criação de tickets
+- atribuição de técnico
+- alteração de status
+- comentários em tickets
+
+Para rodar os testes:
+
+```bash
+php artisan test
