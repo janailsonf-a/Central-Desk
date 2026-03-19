@@ -87,7 +87,7 @@ Este projeto foi desenvolvido com foco em:
 ## 📦 Instalação
 
 ```bash
-git clone https://github.com/SEU-USUARIO/centraldesk.git
+git clone https://github.com/janailsonf-a/Central-Desk.git
 cd centraldesk
 
 composer install
