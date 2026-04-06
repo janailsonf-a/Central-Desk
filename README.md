@@ -1,114 +1,133 @@
-# 🚀 CentralDesk API
+# 🛠 Central Desk
 
-![Laravel](https://img.shields.io/badge/Laravel-10-red)
-![PHP](https://img.shields.io/badge/PHP-8.2-blue)
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
-![License](https://img.shields.io/badge/license-MIT-green)
-
-Sistema de Help Desk desenvolvido com Laravel, focado em gestão de chamados (tickets), SLA, histórico e organização por empresas.
+Help desk and internal request management system built with Laravel.
 
 ---
 
-## 📌 Sobre o projeto
+## 🚀 Overview
 
-O CentralDesk é uma API RESTful que simula um sistema real de suporte técnico.
+Central Desk is a web application designed to manage internal requests, support tickets, and workflows within organizations.
 
-O sistema permite gerenciar chamados do início ao fim, com controle de SLA, histórico completo e anexos.
-
-Este projeto foi desenvolvido com foco em:
-
-- boas práticas de backend
-- organização em camadas (Services)
-- escalabilidade
-- código limpo
+The system enables teams to create, track, and resolve requests efficiently, improving communication and operational processes.
 
 ---
 
-## ⚙️ Funcionalidades
+## 🧠 Features
 
-### 🔐 Autenticação
-- Login com Laravel Sanctum
-- Proteção de rotas
-- Usuário autenticado
-
-### 👥 Usuários
-- Cadastro de usuários
-- Multiempresa
-- Perfis: admin, técnico, solicitante
-
-### 🏢 Estrutura
-- Empresas
-- Departamentos
-- Categorias
-
-### 🎫 Tickets
-- Criar chamado
-- Atribuir técnico
-- Alterar status
-- Listar e filtrar
-
-### 🧠 SLA
-- SLA por prioridade
-- Cálculo automático de prazo due_at)
-- Controle de atraso is_overdue)
-
-### 📝 Comentários
-- Comentários internos e externos
-
-### 📎 Anexos
-- Upload de arquivos
-- Associação com tickets
-
-### 📜 Histórico
-- Registro automático de ações
-
-### 📊 Dashboard
-- Métricas por status
-- Métricas por prioridade
-- Chamados recentes
-
-### ⚙️ Jobs e filas
-- Processamento assíncrono
-- Base pronta para envio de e-mails
+- 📌 Ticket creation and management  
+- 🔄 Status tracking (open, in progress, resolved)  
+- 👥 User roles and permissions  
+- 📝 Comments and updates on tickets  
+- 🔐 Authentication and access control  
+- 📊 Organized workflow for internal processes  
 
 ---
 
-## 🛠️ Tecnologias
+## 🛠 Tech Stack
 
-- PHP 8+
-- Laravel 10+
-- MySQL / SQLite
-- Laravel Sanctum
-- Queue (Jobs)
-- Mail
+- PHP  
+- Laravel  
+- MySQL  
+- Vite  
+- Docker (optional)  
 
 ---
 
-## 📦 Instalação
+## 🏗 Architecture
+
+The application follows a structured MVC architecture:
+
+- **Models** → represent data and relationships  
+- **Controllers** → handle application logic  
+- **Views** → user interface (Blade templates)  
+- **Services** → business rules and operations  
+
+This structure ensures maintainability and scalability.
+
+---
+
+## 📦 Installation
 
 ```bash
-git clone https://github.com/janailsonf-a/Central-Desk.git
-cd centraldesk
+git clone https://github.com/janailsonf-a/Central-Desk
+cd Central-Desk
 
 composer install
-
 cp .env.example .env
-
 php artisan key:generate
+```
 
+---
 
-## ✅ Testes automatizados
-
-O projeto conta com testes automatizados cobrindo o fluxo principal da aplicação:
-
-- login de usuário
-- bloqueio de usuário inativo
-- criação de tickets
-- atribuição de técnico
-- alteração de status
-- comentários em tickets
-
-Para rodar os testes:
+## 🗄 Database
 
 ```bash
-php artisan test
+php artisan migrate
+```
+
+---
+
+## ▶️ Running
+
+```bash
+php artisan serve
+```
+
+---
+
+## 📸 API Preview
+
+### 🔐 Authentication - Login
+
+Example request:
+
+```json
+{
+  "email": "admin@centraldesk.com",
+  "password": "123456"
+}
+```
+
+Response:
+
+```json
+{
+  "message": "Login realizado com sucesso.",
+  "token": "...",
+  "user": {
+    "id": 1,
+    "name": "Admin Demo",
+    "email": "admin@centraldesk.com"
+  }
+}
+```
+
+---
+
+## 🔐 Authentication
+
+The API uses token-based authentication.  
+After login, the token must be included in all protected requests.
+
+---
+
+## 🌍 Use Cases
+
+- Internal company support systems  
+- IT help desk platforms  
+- Service request management  
+- Workflow organization systems  
+
+---
+
+## 📸 Screenshots
+
+<img width="1920" height="935" src="https://github.com/user-attachments/assets/b60bf747-422e-4a4e-be81-f86f2b8eeba1" />
+<img width="1920" height="935" src="https://github.com/user-attachments/assets/cc54c8c2-4c0f-4442-9934-3796094a4cf7" />
+<img width="1920" height="935" src="https://github.com/user-attachments/assets/c7637a05-3eb8-4825-93f6-c7b2d837a844" />
+
+---
+
+## 👨‍💻 Author
+
+Developed by Janailson Almeida
